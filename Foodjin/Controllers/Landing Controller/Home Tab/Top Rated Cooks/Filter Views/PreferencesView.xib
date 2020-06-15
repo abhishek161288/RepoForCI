@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PreferencesView" customModule="Foodjin" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="424" height="132"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="y2Z-Ah-Wdl">
+                    <rect key="frame" x="5" y="5" width="414" height="122"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="vX3-dd-L6E">
+                        <size key="itemSize" width="0.0" height="0.0"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="iN0-l3-epB" id="tg2-6a-uZn"/>
+                        <outlet property="delegate" destination="iN0-l3-epB" id="Rjh-Is-Sx8"/>
+                    </connections>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="y2Z-Ah-Wdl" secondAttribute="bottom" constant="5" id="3Q9-1o-qbZ"/>
+                <constraint firstAttribute="trailing" secondItem="y2Z-Ah-Wdl" secondAttribute="trailing" constant="5" id="MuA-YP-wl1"/>
+                <constraint firstItem="y2Z-Ah-Wdl" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="Ozw-Qm-0ox"/>
+                <constraint firstItem="y2Z-Ah-Wdl" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="5" id="qnh-b2-Pz3"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="collectionView" destination="y2Z-Ah-Wdl" id="kde-kG-EE2"/>
+            </connections>
+            <point key="canvasLocation" x="147.82608695652175" y="-127.23214285714285"/>
+        </view>
+    </objects>
+</document>

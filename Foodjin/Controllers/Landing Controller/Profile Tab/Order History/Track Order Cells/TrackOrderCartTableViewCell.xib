@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="bree-serif.regular.ttf">
+            <string>BreeSerif-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="82" id="KGk-i7-Jjw" customClass="TrackOrderCartTableViewCell" customModule="Ecuador" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="431" height="82"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="431" height="82"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gTv-2q-69v">
+                        <rect key="frame" x="5" y="5" width="60" height="72"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="a38-va-7ed"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="N" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QLj-E4-4N2">
+                        <rect key="frame" x="75" y="32" width="12" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="NSx-G6-R5m"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="BreeSerif-Regular" family="Bree Serif" pointSize="16"/>
+                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="euK-pV-0ZO">
+                        <rect key="frame" x="401.5" y="42" width="9.5" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="kb9-ka-GkU"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="BreeSerif-Regular" family="Bree Serif" pointSize="17"/>
+                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gE3-du-l4V">
+                        <rect key="frame" x="401.5" y="22" width="9.5" height="19"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="19" id="wdG-wT-ifi"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="BreeSerif-Regular" family="Bree Serif" pointSize="17"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="euK-pV-0ZO" secondAttribute="trailing" constant="20" id="Bcw-cf-diH"/>
+                    <constraint firstItem="QLj-E4-4N2" firstAttribute="leading" secondItem="gTv-2q-69v" secondAttribute="trailing" constant="10" id="By1-9d-qxb"/>
+                    <constraint firstItem="gTv-2q-69v" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="NlV-M5-PfU"/>
+                    <constraint firstAttribute="bottom" secondItem="gTv-2q-69v" secondAttribute="bottom" constant="5" id="YQS-YG-EBY"/>
+                    <constraint firstItem="euK-pV-0ZO" firstAttribute="top" secondItem="gE3-du-l4V" secondAttribute="bottom" constant="1" id="ecH-x6-2xy"/>
+                    <constraint firstItem="gTv-2q-69v" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="fzN-3d-Leu"/>
+                    <constraint firstItem="gE3-du-l4V" firstAttribute="trailing" secondItem="euK-pV-0ZO" secondAttribute="trailing" id="lo5-fA-aaM"/>
+                    <constraint firstItem="euK-pV-0ZO" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" constant="10" id="nOJ-RE-B4A"/>
+                    <constraint firstItem="QLj-E4-4N2" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="uYE-2A-iEN"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="cartImage" destination="gTv-2q-69v" id="hb1-vD-r01"/>
+                <outlet property="cartItems" destination="gE3-du-l4V" id="HzB-kU-SKE"/>
+                <outlet property="cartName" destination="QLj-E4-4N2" id="7AO-qO-7pq"/>
+                <outlet property="cartPrice" destination="euK-pV-0ZO" id="5JE-OU-xjj"/>
+            </connections>
+            <point key="canvasLocation" x="218.11594202898553" y="99.107142857142847"/>
+        </tableViewCell>
+    </objects>
+</document>

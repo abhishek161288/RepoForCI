@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="RadioCollectionViewCell" id="gTV-IL-0wX" customClass="RadioCollectionViewCell" customModule="Foodjin" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="159" height="48"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="159" height="48"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="filterRadioBtn" translatesAutoresizingMaskIntoConstraints="NO" id="XCZ-fH-UdT">
+                        <rect key="frame" x="5" y="5" width="30" height="38"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="p5y-WN-Y7v"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qi6-ey-IYq">
+                        <rect key="frame" x="40" y="0.0" width="119" height="48"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="qi6-ey-IYq" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="0U9-hA-xNX"/>
+                <constraint firstItem="XCZ-fH-UdT" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="5Dp-fC-f7x"/>
+                <constraint firstItem="qi6-ey-IYq" firstAttribute="leading" secondItem="XCZ-fH-UdT" secondAttribute="trailing" constant="5" id="9uA-Mb-ooJ"/>
+                <constraint firstAttribute="bottom" secondItem="qi6-ey-IYq" secondAttribute="bottom" id="GuX-kN-Rj2"/>
+                <constraint firstAttribute="bottom" secondItem="XCZ-fH-UdT" secondAttribute="bottom" constant="5" id="IV3-vV-kXm"/>
+                <constraint firstItem="XCZ-fH-UdT" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="evf-La-C6J"/>
+                <constraint firstAttribute="trailing" secondItem="qi6-ey-IYq" secondAttribute="trailing" id="xPg-14-gvx"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="159" height="48"/>
+            <connections>
+                <outlet property="image" destination="XCZ-fH-UdT" id="hjF-Hl-S0S"/>
+                <outlet property="title" destination="qi6-ey-IYq" id="QbF-vs-x4z"/>
+            </connections>
+            <point key="canvasLocation" x="216.66666666666669" y="89.0625"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="filterRadioBtn" width="30" height="32"/>
+    </resources>
+</document>

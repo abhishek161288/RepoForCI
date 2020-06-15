@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="88" id="KGk-i7-Jjw" customClass="NewsDetailTableViewCell" customModule="Ecuador" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="370" height="88"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="370" height="87.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="notificationIcon" translatesAutoresizingMaskIntoConstraints="NO" id="gT0-pH-Al8">
+                        <rect key="frame" x="5" y="5" width="50" height="50"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="EUi-4n-fQt"/>
+                            <constraint firstAttribute="height" constant="50" id="fEv-fR-4yO"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="25"/>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Navpreet Singh" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Mn-Lz-NQM">
+                        <rect key="frame" x="65" y="5" width="300" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="fA2-Tt-S7C"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                        <color key="textColor" red="0.40784313729999999" green="0.0039215686269999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LK7-v1-cCK">
+                        <rect key="frame" x="65" y="30" width="295" height="52.5"/>
+                        <string key="text">sadjbsad sakjdksa dkjsahd sakjdhksad sajdm sakdbksa dkjsad sakbdsa dkbask dkjsabdm sakdbsa dkbsad sakbdsa dkbsakd ksabdksa dk sakbd</string>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="gT0-pH-Al8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="4LT-hn-2hG"/>
+                    <constraint firstItem="4Mn-Lz-NQM" firstAttribute="top" secondItem="gT0-pH-Al8" secondAttribute="top" id="9n2-fz-6HE"/>
+                    <constraint firstItem="LK7-v1-cCK" firstAttribute="leading" secondItem="gT0-pH-Al8" secondAttribute="trailing" constant="10" id="BaZ-PP-5Kd"/>
+                    <constraint firstAttribute="trailing" secondItem="4Mn-Lz-NQM" secondAttribute="trailing" constant="5" id="Nkj-Wb-tEV"/>
+                    <constraint firstAttribute="trailing" secondItem="LK7-v1-cCK" secondAttribute="trailing" constant="10" id="Qfk-SR-3dF"/>
+                    <constraint firstItem="LK7-v1-cCK" firstAttribute="top" secondItem="4Mn-Lz-NQM" secondAttribute="bottom" constant="5" id="SFY-SE-mwJ"/>
+                    <constraint firstItem="gT0-pH-Al8" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="Ult-x5-CEn"/>
+                    <constraint firstItem="4Mn-Lz-NQM" firstAttribute="leading" secondItem="gT0-pH-Al8" secondAttribute="trailing" constant="10" id="VJl-M0-mhL"/>
+                    <constraint firstAttribute="bottom" secondItem="LK7-v1-cCK" secondAttribute="bottom" constant="5" id="n3E-np-vHC"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="desc" destination="LK7-v1-cCK" id="s7i-ta-bSa"/>
+                <outlet property="name" destination="4Mn-Lz-NQM" id="lrj-1O-1zp"/>
+                <outlet property="profileImage" destination="gT0-pH-Al8" id="Cbi-FP-bXF"/>
+            </connections>
+            <point key="canvasLocation" x="169.56521739130437" y="63.616071428571423"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="notificationIcon" width="38" height="48"/>
+    </resources>
+</document>
