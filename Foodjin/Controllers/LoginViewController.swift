@@ -20,6 +20,8 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var forgotPasswordButton: UIButton!
     @IBOutlet weak var signInButton: UIButton!
     @IBOutlet weak var registerNowButton: UIButton!
+    
+    
 
     
     
